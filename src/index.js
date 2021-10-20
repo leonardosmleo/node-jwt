@@ -37,5 +37,4 @@ app.post('/login', (req, res) => {
 
 app.get('/protected', protectRoute, (req, res) => res.send(req.decoded))
 
-
 app.listen(port, () => console.log('Api rodando na porta 3000'))
